@@ -2,7 +2,7 @@
 
 A full-stack file management application built with React and Django, designed for efficient file handling and storage.
 
-## 🚀 Technology Stack
+## Technology Stack
 
 ### Backend
 - Django 4.x (Python web framework)
@@ -29,7 +29,7 @@ Before you begin, ensure you have installed:
 - Node.js (18.x or higher) - for local development
 - Python (3.9 or higher) - for local development
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Using Docker (Recommended)
 
@@ -85,12 +85,12 @@ docker-compose up --build
    npm start
    ```
 
-## 🌐 Accessing the Application
+## Accessing the Application
 
 - Frontend Application: http://localhost:3000
 - Backend API: http://localhost:8000/api
 
-## 📝 API Documentation
+## API Documentation
 
 ### File Management Endpoints
 
@@ -139,30 +139,12 @@ file-hub/
 └── docker-compose.yml    # Docker composition
 ```
 
-## 🔧 Development Features
+## Development Features
 
 - Hot reloading for both frontend and backend
 - React Query DevTools for debugging data fetching
 - TypeScript for better development experience
 - Tailwind CSS for rapid UI development
-
-## 🐛 Troubleshooting
-
-1. **Port Conflicts**
-   ```bash
-   # If ports 3000 or 8000 are in use, modify docker-compose.yml or use:
-   # Frontend: npm start -- --port 3001
-   # Backend: python manage.py runserver 8001
-   ```
-
-2. **File Upload Issues**
-   - Maximum file size: 10MB
-   - Ensure proper permissions on media directory
-   - Check network tab for detailed error messages
-
-3. **Database Issues**
-   ```bash
-   # Reset database
-   rm backend/data/db.sqlite3
-   python manage.py migrate
+- Storage Savings with content-hash based duplicate detection
+- Advanced filtering and searching capabilities
    ```
